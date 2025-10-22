@@ -25,7 +25,7 @@ function HeroText() {
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.2 }}
-          >Ein Entwickler <br /> mit Liebe zum Detail</motion.p>
+          >Ein Entwickler <br /> mit Liebe zum Detail für</motion.p>
           <motion.div
             variants={variants}
             initial="hidden"
