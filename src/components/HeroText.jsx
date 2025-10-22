@@ -56,7 +56,7 @@ function HeroText() {
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.5 }}>
-            <FlipWords words={wordsMobile} className='font-bold text-white text-7xl' /></motion.div>
+            <FlipWords words={wordsMobile} className='font-semibold text-white text-7xl' /></motion.div>
           <motion.p className="text-4xl font-black text-neutral-300"
             variants={variants}
             initial="hidden"
