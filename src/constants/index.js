@@ -56,7 +56,7 @@ export const myProjects = [
     ],
     href: "https://github.com/ZintelFelix/SpotifyAPITopTracks",
     logo: "",
-    image: "/assets/projects/spotify-top-tracks.jpg",
+    image: "/assets/projects/WorkInProgress.png",
     tags: [
       { id: 1, name: "C#", path: "/assets/logos/csharp.svg" },
       { id: 2, name: ".NET", path: "/assets/logos/dotnet.svg" },
