@@ -104,7 +104,6 @@ export const experiences = [
       "Programmierung und objektorientierte Softwareentwicklung",
       "Relationale Datenbanken modellieren und mit SQL abfragen",
       "Grundlagen zu Netzwerken und Betriebssystemen",
-      "Webentwicklung und Abschlussprojekt bzw. gelenktes Praktikum",
     ],
   },
   {
