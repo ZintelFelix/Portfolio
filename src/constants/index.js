@@ -12,7 +12,7 @@ export const myProjects = [
       "Frontend mit Vite-Dev-Server; klare Trennung in frontend/ und backend/.",
       "CORS-Konfiguration für lokale Entwicklung; einfache Admin-Seite.",
     ],
-    href: "https://github.com/ZintelFelix/MeisterWare-Webshop",
+    href: 'https://github.com/ZintelFelix/MeisterWare-Webshop',
     logo: "",
     image: "/assets/projects/MeisterWare.png", 
     tags: [
