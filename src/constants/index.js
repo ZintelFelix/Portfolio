@@ -12,9 +12,9 @@ export const myProjects = [
       "Frontend mit Vite-Dev-Server; klare Trennung in frontend/ und backend/.",
       "CORS-Konfiguration für lokale Entwicklung; einfache Admin-Seite.",
     ],
-    href: 'https://github.com/ZintelFelix/MeisterWare-Webshop',
+    href: "https://github.com/ZintelFelix/MeisterWare-Webshop",
     logo: "",
-    image: "/assets/projects/MeisterWare.png", 
+    image: "/assets/projects/MeisterWare.png",
     tags: [
       { id: 1, name: "C#", path: "/assets/logos/csharp.svg" },
       { id: 2, name: ".NET", path: "/assets/logos/dotnet.svg" },
@@ -38,8 +38,8 @@ export const myProjects = [
     image: "/assets/projects/Vinylify.png",
     tags: [
       { id: 1, name: "C#", path: "/assets/logos/csharp.svg" },
-      { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" }, 
-      { id: 3, name: "Vue", path: "/assets/logos/vue.svg" }, 
+      { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+      { id: 3, name: "Vue", path: "/assets/logos/vue.svg" },
       { id: 4, name: "Vite", path: "/assets/logos/vitejs.svg" },
     ],
   },
@@ -122,3 +122,49 @@ export const experiences = [
 export const reviews = [
   // Keine echten Testimonials vorhanden. TODO: Später Referenzen/Kurzstatements eintragen.
 ];
+
+export const photographySlides = [
+  {
+    id: 1,
+    title: "Goðafoss Wasserfall, Island",
+    src: "/assets/hobby/goðafoss-island.jpg",
+    layout: "portrait",
+    meta: {
+      camera: "Canon EOS 450D",
+      focalLength: "210mm",
+      shutter: "1/1250s",
+      aperture: "f/6.3",
+      iso: "200",
+      location: "Island"
+    }
+  },
+  {
+    id: 2,
+    title: "Reykjavik Shoreline, Island",
+    src: "/assets/hobby/reykjavic-shoreline.jpg",
+    layout: "wide",
+    meta: {
+      camera: "Canon EOS 450D",
+      focalLength: "65mm",
+      shutter: "1/500s",
+      aperture: "f/6.3",
+      iso: "100",
+      location: "Reykjavik"
+    }
+  },
+  {
+    id: 3,
+    title: "Reykjavik House, Island",
+    src: "/assets/hobby/reykjavic-house.jpg",
+    layout: "portrait",
+    meta: {
+      camera: "Canon EOS 450D",
+      focalLength: "210mm",
+      shutter: "1/1250s",
+      aperture: "f/6.3",
+      iso: "200",
+      location: "Reykjavik"
+    }
+  }
+];
+
