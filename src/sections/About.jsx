@@ -18,21 +18,26 @@ const About = () => {
                     </div>
                     <Carousel slides={photographySlides} />
                 </div>
-
-
                 {/* Grid 2 */}
                 <div className="grid-default-color grid-2">
-                    <div className="relative z-10 max-w-[65%] md:max-w-[55%] lg:max-w-[50%]">
+                    <div className="relative z-10 max-w-[85%] md:max-w-[55%] lg:max-w-[50%]">
                         <p className="headtext">Hi, ich bin Felix</p>
                         <p className="subtext">
                             Mit mehrjähriger Erfahrung im Fullstack entwickle ich dynamische und responsive
                             Webanwendungen, die klar, schnell und verlässlich sind.
                         </p>
                     </div>
+                    {/* Mobile View */}
                     <img
                         src="assets/coding-pov.png"
-                        className="hidden md:block pointer-events-none absolute z-0 right-[-3.5rem] top-1/2 -translate-y-1/2 scale-[1.8] lg:scale-[1.6]"
+                        className="absolute md:hidden pointer-events-none top-3/7 -translate-y-1/2 right-[-12rem] opacity-75"
                     />
+                    {/* Desktop View */}
+                    <img
+                        src="assets/coding-pov.png"
+                        className="hidden md:block pointer-events-none absolute z-0 right-[-12rem] top-3/7 -translate-y-1/2 scale-[1.8] lg:scale-[1.6] opacity-75"
+                    />
+
                     <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 bg-gradient-to-t from-indigo" />
                 </div>
 

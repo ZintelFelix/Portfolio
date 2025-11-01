@@ -32,12 +32,7 @@ const CloseButton = ({ onClick }) => (
         className="w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/75 transition"
     >
         <svg viewBox="0 0 24 24" className="w-6 h-6">
-            <path
-                d="M6 6l12 12M18 6l-12 12"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-            />
+            <path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
         </svg>
     </button>
 );
@@ -93,7 +88,7 @@ const PortraitSlide = ({ slide, index, total, onImageClick }) => {
 
             <div className="relative z-10 flex-1 h-[80%] flex flex-col justify-between pr-4">
                 <div>
-                    <p className="text-xs text-white/45 mb-2 tracking-wide">
+                    <p className="text-xs text-white/45 mb-2 tracking-wide md:mt-6">
                         {index + 1} / {total}
                     </p>
                     <h2 className="text-xl font-semibold text-white leading-tight">{title}</h2>
@@ -121,7 +116,7 @@ const WideSlide = ({ slide, index, total, onImageClick }) => {
             </div>
 
             <div className="relative z-10 px-4 pt-4">
-                <p className="text-xs text-white/45 mb-2 tracking-wide">
+                <p className="text-xs text-white/45 mb-2 tracking-wide md:mt-6">
                     {index + 1} / {total}
                 </p>
                 <h2 className="text-xl font-semibold text-white leading-tight">{title}</h2>
@@ -146,6 +141,8 @@ export function Carousel({ slides }) {
     const [isOpen, setIsOpen] = useState(false);
     const id = useId();
     const total = slides.length;
+    const currentSlide = slides[current] ?? slides[0];
+    const isWide = currentSlide?.layout === "wide";
 
     const previous = () => setCurrent((c) => (c - 1 < 0 ? total - 1 : c - 1));
     const next = () => setCurrent((c) => (c + 1 === total ? 0 : c + 1));
@@ -161,11 +158,11 @@ export function Carousel({ slides }) {
         };
         window.addEventListener("keydown", handler);
         return () => window.removeEventListener("keydown", handler);
-    }, [isOpen, next, previous]);
+    }, [isOpen]);
 
     return (
         <>
-            <div className="relative w-full h-full pt-14" aria-labelledby={`carousel-${id}`}>
+            <div className="relative w-full h-full hidden md:block pt-14" aria-labelledby={`carousel-${id}`}>
                 <ul
                     className="absolute inset-x-0 bottom-0 top-16 flex transition-transform duration-500 ease-in-out"
                     style={{
@@ -195,6 +192,38 @@ export function Carousel({ slides }) {
                 </ul>
 
                 <div className="absolute bottom-4 right-4 flex gap-2 z-30">
+                    <ArrowButton direction="left" onClick={previous} title="Vorheriges Bild" />
+                    <ArrowButton direction="right" onClick={next} title="Nächstes Bild" />
+                </div>
+            </div>
+
+            <div className="md:hidden w-full h-full flex flex-col gap-4 pt-16 px-4 pb-14 bg-gradient-to-b from-[#0f1425]/90 to-[#0f1425]/10">
+                <p className="text-xs text-white/55">
+                    {current + 1} / {total}
+                </p>
+                <p className="text-lg font-semibold text-white leading-tight">
+                    {currentSlide.title}
+                </p>
+
+                <div
+                    className={
+                        isWide
+                            ? "w-full aspect-[16/10] rounded-xl overflow-hidden bg-black/10 border border-white/5"
+                            : "w-full aspect-[3/4] max-h-[420px] rounded-xl overflow-hidden bg-black/10 border border-white/5 flex items-center justify-center"
+                    }
+                >
+                    <button type="button" onClick={open} className="w-full h-full">
+                        <img
+                            src={currentSlide.src}
+                            alt={currentSlide.title}
+                            className={isWide ? "w-full h-full object-cover" : "w-full h-full object-contain"}
+                        />
+                    </button>
+                </div>
+
+                <MetaPills meta={currentSlide.meta} />
+
+                <div className="flex justify-center gap-4 mt-auto">
                     <ArrowButton direction="left" onClick={previous} title="Vorheriges Bild" />
                     <ArrowButton direction="right" onClick={next} title="Nächstes Bild" />
                 </div>
