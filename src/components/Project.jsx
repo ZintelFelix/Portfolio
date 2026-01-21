@@ -18,7 +18,7 @@ const Project = ({ title, description, subDescription, href, image, tags, setPre
                 </div>
                 <button onClick={() =>setIsHidden(true)}className="flex items-center gap-1 cursor-pointer hover-animation sm:ml-auto">
                     Mehr lesen
-                    <img src="assets/arrow-right.svg" className="w-5" />
+                    <img src="assets/arrow-right.svg" className="w-5" alt="" />
                 </button>
             </div>
             <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />

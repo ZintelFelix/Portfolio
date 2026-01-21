@@ -21,5 +21,5 @@ export function FrameWorks() {
 }
 
 const Icon = ({ src }) => (
-    <img src={src} className="rounded-sm hover:scale-110 duration-200" />
+    <img src={src} className="rounded-sm hover:scale-110 duration-200" alt="" />
 )
