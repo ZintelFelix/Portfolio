@@ -14,7 +14,7 @@ export const myProjects = [
     ],
     href: "https://github.com/ZintelFelix/MeisterWare-Webshop",
     logo: "",
-    image: "/assets/projects/MeisterWare.png",
+    image: "/assets/projects/MeisterWare.avif",
     tags: [
       { id: 1, name: "C#", path: "/assets/logos/csharp.svg" },
       { id: 2, name: ".NET", path: "/assets/logos/dotnet.svg" },
@@ -35,7 +35,7 @@ export const myProjects = [
     ],
     href: "https://github.com/ZintelFelix/Vinylify",
     logo: "",
-    image: "/assets/projects/Vinylify.png",
+    image: "/assets/projects/Vinylify.avif",
     tags: [
       { id: 1, name: "C#", path: "/assets/logos/csharp.svg" },
       { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
@@ -56,7 +56,7 @@ export const myProjects = [
     ],
     href: "https://github.com/ZintelFelix/SpotifyAPITopTracks",
     logo: "",
-    image: "/assets/projects/WorkInProgress.png",
+    image: "/assets/projects/WorkInProgress.avif",
     tags: [
       { id: 1, name: "C#", path: "/assets/logos/csharp.svg" },
       { id: 2, name: ".NET", path: "/assets/logos/dotnet.svg" },
@@ -127,7 +127,7 @@ export const photographySlides = [
   {
     id: 1,
     title: "Goðafoss Wasserfall, Island",
-    src: "/assets/hobby/goðafoss-island.jpg",
+    src: "/assets/hobby/goðafoss-island.avif",
     layout: "portrait",
     meta: {
       camera: "Canon EOS 450D",
@@ -141,7 +141,7 @@ export const photographySlides = [
   {
     id: 2,
     title: "Reykjavik Shoreline, Island",
-    src: "/assets/hobby/reykjavic-shoreline.jpg",
+    src: "/assets/hobby/reykjavic-shoreline.avif",
     layout: "wide",
     meta: {
       camera: "Canon EOS 450D",
@@ -155,7 +155,7 @@ export const photographySlides = [
   {
     id: 3,
     title: "Reykjavik House, Island",
-    src: "/assets/hobby/reykjavic-house.jpg",
+    src: "/assets/hobby/reykjavic-house.avif",
     layout: "portrait",
     meta: {
       camera: "Canon EOS 450D",

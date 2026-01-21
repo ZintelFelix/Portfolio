@@ -29,13 +29,13 @@ const About = () => {
                     </div>
                     {/* Mobile View */}
                     <img
-                        src="assets/coding-pov.png"
+                        src="assets/coding-pov.avif"
                         alt="Coding Point of View"
                         className="absolute md:hidden pointer-events-none top-3/7 -translate-y-1/2 right-[-12rem] opacity-75"
                     />
                     {/* Desktop View */}
                     <img
-                        src="assets/coding-pov.png"
+                        src="assets/coding-pov.avif"
                         alt="Coding Point of View"
                         className="hidden md:block pointer-events-none absolute z-0 right-[-12rem] top-3/7 -translate-y-1/2 scale-[1.8] lg:scale-[1.6] opacity-75"
                     />
