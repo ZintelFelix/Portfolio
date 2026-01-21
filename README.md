@@ -237,7 +237,3 @@ Ideas that work well for professional GitHub presentation:
 ## License
 
 © 2025 Felix. All rights reserved.
-
-```
-::contentReference[oaicite:0]{index=0}
-```
