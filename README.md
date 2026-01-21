@@ -68,13 +68,6 @@ This repository contains my personal portfolio site. The goal is to present proj
 
 ---
 
-Alles klar. 🙂
-
-Der Mermaid-Fehler kommt daher, dass GitHub’s Mermaid-Renderer in manchen Fällen mit **Klammern im Node-Text** zickt. Lösung: **Klammern raus** (oder den Text quoten, aber “Klammern raus” ist am robustesten).
-
-Nimm einfach diese Version:
-
-````md
 ## Architecture
 
 High-level page flow:
