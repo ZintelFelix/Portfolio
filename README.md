@@ -68,6 +68,13 @@ This repository contains my personal portfolio site. The goal is to present proj
 
 ---
 
+Alles klar. 🙂
+
+Der Mermaid-Fehler kommt daher, dass GitHub’s Mermaid-Renderer in manchen Fällen mit **Klammern im Node-Text** zickt. Lösung: **Klammern raus** (oder den Text quoten, aber “Klammern raus” ist am robustesten).
+
+Nimm einfach diese Version:
+
+````md
 ## Architecture
 
 High-level page flow:
@@ -76,24 +83,21 @@ High-level page flow:
 flowchart TD
   A[App] --> N[Navbar]
   A --> H[Hero]
-  H --> H3D[3D Scene (Astronaut)]
+  H --> H3D[3D Scene - Astronaut]
   A --> AB[About]
   A --> PR[Projects]
   A --> EX[Experience]
   A --> CO[Contact]
   A --> F[Footer]
-```
 ````
 
 Navigation anchors:
 
-- `#home`
-- `#about`
-- `#projects`
-- `#experience`
-- `#contact`
-
----
+* `#home`
+* `#about`
+* `#projects`
+* `#experience`
+* `#contact`
 
 ## Project Structure
 
